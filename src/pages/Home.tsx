@@ -27,10 +27,15 @@ async function handleJoinRoom(event: FormEvent) {
         return;
     }
 
-    const roomRef = await database.ref(`roomCode/${roomCode}`).get();
+    const roomRef = await database.ref(`rooms/${roomCode}`).get();
     
     if(!roomRef.exists()) {
         alert('Room does not exist');
+        return;
+    }
+
+    if (roomRef.val().endedAt) {
+        alert('Room already closed');
         return;
     }
 

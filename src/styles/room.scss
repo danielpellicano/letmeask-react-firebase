@@ -10,6 +10,16 @@
             justify-content: space-between;
             align-items: center;
 
+            div {
+                display: flex;
+                align-items: center;
+                gap: 16px;
+
+                button {
+                    height:40px;
+                }
+            }
+
             > img {
                 max-height: 45px;
             }
@@ -19,6 +29,10 @@
     main {
         max-width: 800px;
         margin:0 auto;
+
+        .question-list {
+            margin-top: 32px;
+        }
 
         .room-title {
             margin: 32px 0 24px 0;
