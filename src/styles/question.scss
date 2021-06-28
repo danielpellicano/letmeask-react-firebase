@@ -10,6 +10,8 @@
 
     p {
         color: #29292e;
+        margin-bottom: 16px;
+        font-weight: bold;
     }
 
     footer {
@@ -22,6 +24,7 @@
     .user-info {
         display: flex;
         align-items: center;
+        justify-content:space-between;
 
         img {
             width:32px;
@@ -44,6 +47,7 @@
             display:flex;
             align-items:flex-end;
             color:#737380;
+            padding:0;
             gap:8px;
         
             &.liked {
@@ -56,6 +60,17 @@
         }
     }
 
+    .btns-children {
+        display:flex;
+        gap:16px;
+
+        button {
+            padding:0;
+        }
+    }
+
 
     }
+
+
 }

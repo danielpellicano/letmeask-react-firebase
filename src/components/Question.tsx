@@ -15,9 +15,11 @@ export function Question({content, author, children}: QuestionProps) {
         <div className="question">
             <p>{content}</p>
             <div className="user-info">
+                <div>
                 <img src={author.avatar} alt={author.name} />
                 <span>{author.name}</span>
-                <div>
+                </div>
+                <div className="btns-children">
                     {children}
                 </div>
             </div>
